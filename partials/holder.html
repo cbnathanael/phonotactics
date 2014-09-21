@@ -1,0 +1,146 @@
+        
+            <!-- <ul class="tabs" data-tab>
+                <li class="tab-title active"><a href="#panel-phonemes">Phonemes</a></li>
+                <li class="tab-title"><a href="#panel-structure">Structure</a></li>
+                <li class="tab-title disabled"><a href="#panel-syllables">Generated Syllables</a>
+                </li>
+            </ul>
+            <div class="tabs-content">
+                <div class="content active" id="panel-phonemes" ng-view="">
+                    
+                    
+                </div>
+                <div class="content" id="panel-structure">
+                    <div class="row">
+                        <div class="medium-5 columns">
+                            
+                        </div>
+                        <div class="medium-7 columns">
+                            <div class="panel">
+                                Phoneme Groups
+                                <dl class="phoneme_list">
+                                    <dt>Consonants (C)</dt>
+                                    <dd>{{syllable.consonant}}</dd>
+                                    <dt>Vowels (V)</dt>
+                                    <dd>{{syllable.vowel}}</dd>
+                                    <dt ng-show="syllable.plosive">Plosives (P)</dt>
+                                    <dd ng-show="syllable.plosive">{{syllable.plosive}}</dd>
+                                    <dt ng-show="syllable.nasal">Nasals (N)</dt>
+                                    <dd ng-show="syllable.nasal">{{syllable.nasal}}</dd>
+                                    <dt ng-show="syllable.trill">Trills (R)</dt>
+                                    <dd ng-show="syllable.trill">{{syllable.trill}}</dd>
+                                    <dt ng-show="syllable.tap">Tap or Flaps (T)</dt>
+                                    <dd ng-show="syllable.tap">{{syllable.tap}}</dd>
+                                    <dt ng-show="syllable.fricative">Fricatives (F)</dt>
+                                    <dd ng-show="syllable.fricative">{{syllable.fricative}}</dd>
+                                    <dt ng-show="syllable.latFricative">Lateral Fricatives (L)</dt>
+                                    <dd ng-show="syllable.latFricative">{{syllable.latFricative}}</dd>
+                                    <dt ng-show="syllable.approximant">Approximants (A)</dt>
+                                    <dd ng-show="syllable.approximant">{{syllable.approximant}}</dd>
+                                    <dt ng-show="syllable.latApproximant">Lateral Approximants (B)</dt>
+                                    <dd ng-show="syllable.latApproximant">{{syllable.latApproximant}}</dd>
+                                    <dt ng-show="syllable.affricate">Affricates (I)</dt>
+                                    <dd ng-show="syllable.affricate">{{syllable.affricate}}</dd>
+                                    <dt ng-show="syllable.click">Clicks (K)</dt>
+                                    <dd ng-show="syllable.click">{{syllable.click}}</dd>
+                                    <dt ng-show="syllable.voicedImplosive">Voiced Implosives (M)</dt>
+                                    <dd ng-show="syllable.voicedImplosive">{{syllable.voicedImplosive}}</dd>
+                                    <dt ng-show="syllable.ejective">Ejectives (E)</dt>
+                                    <dd ng-show="syllable.ejective">{{syllable.ejective}}</dd>
+                                    <dt ng-show="syllable.other">Other (D)</dt>
+                                    <dd ng-show="syllable.other">{{syllable.other}}</dd>
+                                    <dt ng-show="syllable.close">Close (S)</dt>
+                                    <dd ng-show="syllable.close">{{syllable.close}}</dd>
+                                    <dt ng-show="syllable.closeMid">Close-Mid (G)</dt>
+                                    <dd ng-show="syllable.closeMid">{{syllable.closeMid}}</dd>
+                                    <dt ng-show="syllable.openMid">Open-Mid (H)</dt>
+                                    <dd ng-show="syllable.openMid">{{syllable.openMid}}</dd>
+                                    <dt ng-show="syllable.open">Open</dt>
+                                    <dd ng-show="syllable.open">{{syllable.open}}</dd>
+                                    <dt ng-show="syllable.front">Front (J)</dt>
+                                    <dd ng-show="syllable.front">{{syllable.front}}</dd>
+                                    <dt ng-show="syllable.central">Central (Q)</dt>
+                                    <dd ng-show="syllable.central">{{syllable.central}}</dd>
+                                    <dt ng-show="syllable.back">Back (U)</dt>
+                                    <dd ng-show="syllable.back">{{syllable.back}}</dd>
+                                    <dt ng-show="syllable.group1">Group 1 (W)</dt>
+                                    <dd ng-show="syllable.group1">{{syllable.group1}}</dd>
+                                    <dt ng-show="syllable.group2">Group 2 (X)</dt>
+                                    <dd ng-show="syllable.group2">{{syllable.group2}}</dd>
+                                    <dt ng-show="syllable.group3">Group 3 (Y)</dt>
+                                    <dd ng-show="syllable.group3">{{syllable.group3}}</dd>
+                                    <dt ng-show="syllable.group4">Group 4 (Z)</dt>
+                                    <dd ng-show="syllable.group4">{{syllable.group4}}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <button ng-click="syllable.createSyllables()">Create</button>
+                </div>
+                <div class="content" id="panel-syllables">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <p>Consonants Generated: {{syllable.numberSyllables}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <ul class="small-block-grid-2 medium-block-grid-4">
+                                <li ng-repeat="item in syllable.syllables | startFrom: syllable.currentPage*syllable.pageSize | limitTo:syllable.pageSize">
+                                    {{item}}
+                                </li>
+                            </ul>
+                            <button ng-disabled="syllable.currentPage == 0" ng-click="syllable.currentPage=syllable.currentPage-1">
+                                Previous
+                            </button>
+                            {{syllable.currentPage+1}}/{{syllable.numberOfPages()}}
+                            <button ng-disabled="syllable.currentPage >= syllable.syllables.length/syllable.pageSize - 1" ng-click="syllable.currentPage=syllable.currentPage+1">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            $scope.createSyllables = function() {
+            newSyllables = [];
+            tempArray = [];
+            req = structure['required'];
+            start = 0;
+            end = structure['form'].length;
+
+            formArray = structure['form'].split('');
+
+            //populate with required
+            $scope.syllables = allPhonemes[formArray[req]];
+            newSyllables = allPhonemes[formArray[req]];
+            //make our ending groups
+            for (i = req + 1; i < end; i++) {
+                if (newSyllables.length < 1) {
+                    newSyllables = allPhonemes[formArray[i]];
+                } else {
+                    tempArray = [newSyllables, allPhonemes[formArray[i]]];
+                    newSyllables = allPossibleCases(tempArray);
+                }
+
+                $scope.syllables.push.apply($scope.syllables, newSyllables);
+
+            }
+            //clear for opening
+            newSyllables = [];
+            for (i = req - 1; i > -1; i--) {
+                if (newSyllables.length < 1) {
+                    newSyllables = allPhonemes[formArray[i]];
+                } else {
+                    tempArray = [newSyllables, allPhonemes[formArray[i]]];
+                    newSyllables = allPossibleCasesInverse(tempArray);
+                }
+                //$scope.syllables.push.apply($scope.syllables, newSyllables);
+            }
+            tempArray = [$scope.syllables, newSyllables];
+            newSyllables = allPossibleCasesInverse(tempArray);
+            $scope.syllables.push.apply($scope.syllables, newSyllables);
+            $scope.numberSyllables = $scope.syllables.length;
+            
+        }

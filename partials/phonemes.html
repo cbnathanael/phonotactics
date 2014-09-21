@@ -1,0 +1,385 @@
+<form action="" class="custom">
+    <a id=""></a>
+    <accordion close-others="false">
+
+        <accordion-group is-open="masterOpen" ng-init="masterOpen = true">
+            <accordion-heading>
+                Master Lists <i class="right" ng-class="{'fa fa-angle-down': masterOpen, 'fa fa-angle-right': !masterOpen}"></i>
+            </accordion-heading>
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="consonant" id="phonemeList">
+                        <var>C</var>Consonants</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="consonant" name="consonant" ng-list ng-model="phonemes.c" />
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+                <div class="row collapse">
+                    <div class="small-12 medium-2 columns">
+                        <label for="vowel" class="prefix">
+                            <var>V</var>Vowels</label>
+                    </div>
+                    <div class="small-11 medium-9 columns">
+                        <input type="text" id="vowel" name="vowel" ng-list ng-model="phonemes.v">
+                    </div>
+                    <div class="small-1 columns">
+                        <button class="postfix ipa" ng-click="ipaChart($event)">IPA</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <button disabled title="Coming Soon">Fill Sub-groups</button> -->
+        </accordion-group>
+        <accordion-group is-open="pulmonicOpen">
+            <accordion-heading>
+                Pulmonic Consonants <i class="right" ng-class="{'fa fa-angle-down': pulmonicOpen, 'fa fa-angle-right': !pulmonicOpen}"></i>
+            </accordion-heading>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="plosive">
+                        <var>P</var>Plosive</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="plosive" name="plosive" ng-list ng-model="usedPhonemes.p">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="nasal">
+                        <var>N</var>Nasal</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="nasal" name="nasal" ng-list ng-model="usedPhonemes.n">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+            <div class="row collapse">
+
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="trill">
+                        <var>R</var>Trill</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="trill" name="trill" ng-list ng-model="usedPhonemes.r">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+            <div class="row collapse">
+
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="tap">
+                        <var>T</var>Tap or Flap</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="tap" name="tap" ng-list ng-model="usedPhonemes.t">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+            <div class="row collapse">
+
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="fricative">
+                        <var>F</var>Fricative</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="fricative" name="fricative" ng-list ng-model="usedPhonemes.f">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="latFricative">
+                        <var>L</var>Lat. Fricative</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="latFricative" name="latFricative" ng-list ng-model="usedPhonemes.l">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="approximant">
+                        <var>A</var>Approximant</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="approximant" name="approximant" ng-list ng-model="usedPhonemes.a">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="latApproximant">
+                        <var>B</var>Lat. Approx.</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="latApproximant" name="latApproximant" ng-list ng-model="usedPhonemes.b" />
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+
+            </div>
+            </div>
+        </accordion-group>
+
+        <accordion-group is-open="otherOpen">
+            <accordion-heading>
+                Other Consonants <i class="right" ng-class="{'fa fa-angle-down': otherOpen, 'fa fa-angle-right': !otherOpen}"></i>
+            </accordion-heading>
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="affricate">
+                        <var>I</var>Affricates</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="affricate" name="affricate" ng-list ng-model="usedPhonemes.i">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="click">
+                        <var>K</var>Clicks</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="click" name="click" ng-list ng-model="usedPhonemes.k">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="voicedImplosive">
+                        <var>M</var>Voiced Implosives</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="voicedImplosive" name="voicedImplosive" ng-list ng-model="usedPhonemes.m">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="ejective">
+                        <var>E</var>Ejectives</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="ejective" name="ejective" ng-list ng-model="usedPhonemes.e">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="other">
+                        <var>D</var>Other</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="other" name="other" ng-list ng-model="usedPhonemes.d">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+        </accordion-group>
+
+        <accordion-group is-open="vowelOpen">
+            <accordion-heading>
+                Vowels <i class="right" ng-class="{'fa fa-angle-down': vowelOpen, 'fa fa-angle-right': !vowelOpen}"></i>
+            </accordion-heading>
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="close">
+                        <var>S</var>Close</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="close" name="close" ng-list ng-model="usedPhonemes.s">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="closeMid">
+                        <var>G</var>Close-Mid</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="closeMid" name="closeMid" ng-list ng-model="usedPhonemes.g">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="openMid">
+                        <var>H</var>Open-Mid</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="openMid" name="openMid" ng-list ng-model="usedPhonemes.h">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="open">
+                        <var>O</var>Open</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="open" name="open" ng-list ng-model="usedPhonemes.o">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="front">
+                        <var>J</var>Front</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="front" name="front" ng-list ng-model="usedPhonemes.j">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="central">
+                        <var>Q</var>Central</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="central" name="central" ng-list ng-model="usedPhonemes.q">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="back">
+                        <var>U</var>Back</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="back" name="back" ng-list ng-model="usedPhonemes.u">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+        </accordion-group>
+
+        <accordion-group is-open="customOpen">
+            <accordion-heading>
+                Custom Groups <i class="right" ng-class="{'fa fa-angle-down': customOpen, 'fa fa-angle-right': !customOpen}"></i>
+            </accordion-heading>
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="group1">
+                        <var>W</var>Group 1</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="group1" name="group1" ng-list ng-model="usedPhonemes.w">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="group2">
+                        <var>X</var>Group 2</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="group2" name="group2" ng-list ng-model="usedPhonemes.x">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="group3">
+                        <var>Y</var>Group 3</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="group3" name="group3" ng-list ng-model="usedPhonemes.y">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+
+            <div class="row collapse">
+                <div class="small-12 medium-2 columns">
+                    <label class="prefix" for="group4">
+                        <var>Z</var>Group 4</label>
+                </div>
+                <div class="small-11 medium-9 columns">
+                    <input type="text" id="group4" name="group4" ng-list ng-model="usedPhonemes.z">
+                </div>
+                <div class="small-1 columns">
+                    <button class="postfix" class="ipa" ng-click="ipaChart($event)">IPA</button>
+                </div>
+            </div>
+
+        </accordion-group>
+    </accordion>
+
+
+</form>

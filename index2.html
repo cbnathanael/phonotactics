@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="phones">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+    <div id="output"></div>
+    
+    
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script>
+        var str = "(ACD)XX(B)YY(E)(F)";
+        var arr = [];
+
+        group = '';
+        for(i=0;i<str.length;i++) {
+            if(str.charAt(i) == '(') {
+                i++;
+                if( group.length > 0 ) {
+                    foo = { optional: false, items: group };
+                    arr.push(foo);
+                    group = '';
+                }
+                
+                while(str.charAt(i) != ')') {
+                    group += str.charAt(i);
+                    i++;
+                }
+                foo = {optional: true, items: group};
+                arr.push(foo);
+                group = '';
+            } else {
+                group += str.charAt(i);
+            }
+        }
+        if( group.length > 0 ) {
+            foo = { optional: false, items: group };
+            arr.push(foo);
+            group = '';
+        }
+        
+    </script>
+</body>
+
+</html>

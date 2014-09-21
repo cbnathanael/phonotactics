@@ -1,0 +1,54 @@
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.75rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 1.4375rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}

@@ -1,0 +1,277 @@
+<div class="row">
+    <div class="small-12 columns">
+        <div class="panel phoneme_list">
+            <span id="phonemePanel">Phoneme Groups</span>
+            <dl>
+                <dt>
+                    <var>C</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.c | csv}}" tooltip-animation="false">Consonants</dd>
+                <dt>
+                    <var>V</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.v | csv}}" tooltip-animation="false">Vowels</dd>
+
+
+                <dt ng-show="usedPhonemes.p.length > 0">
+                    <var>P</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.p | csv}}" tooltip-animation="false" ng-show="usedPhonemes.p.length > 0">Plosives</dd>
+
+
+                <dt ng-show="usedPhonemes.n.length > 0">
+                    <var>N</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.n | csv}}" tooltip-animation="false" ng-show="usedPhonemes.n.length > 0">Nasals</dd>
+
+
+                <dt ng-show="usedPhonemes.r.length > 0">
+                    <var>R</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.r | csv}}" tooltip-animation="false" ng-show="usedPhonemes.r.length > 0">Trills</dd>
+
+
+                <dt ng-show="usedPhonemes.t.length > 0">or Flaps
+                    <var>T</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.t | csv}}" tooltip-animation="false" ng-show="usedPhonemes.t.length > 0">Tap or Flaps</dd>
+
+
+                <dt ng-show="usedPhonemes.f.length > 0">
+                    <var>F</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.f | csv}}" tooltip-animation="false" ng-show="usedPhonemes.f.length > 0">Fricatives</dd>
+
+
+                <dt ng-show="usedPhonemes.l.length > 0">
+                    <var>L</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.l | csv}}" tooltip-animation="false" ng-show="usedPhonemes.l.length > 0">Lateral Fricatives</dd>
+
+
+                <dt ng-show="usedPhonemes.a.length > 0">
+                    <var>A</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.a | csv}}" tooltip-animation="false" ng-show="usedPhonemes.a.length > 0">Approximants</dd>
+
+
+                <dt ng-show="usedPhonemes.b.length > 0">
+                    <var>B</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.b | csv}}" tooltip-animation="false" ng-show="usedPhonemes.b.length > 0">Lateral Approximants</dd>
+
+
+                <dt ng-show="usedPhonemes.i.length > 0">
+                    <var>I</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.i | csv}}" tooltip-animation="false" ng-show="usedPhonemes.i.length > 0">Affricates</dd>
+
+
+
+                <dt ng-show="usedPhonemes.k.length > 0">
+                    <var>K</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.k | csv}}" tooltip-animation="false" ng-show="usedPhonemes.k.length > 0">Clicks</dd>
+
+
+                <dt ng-show="usedPhonemes.m.length > 0">
+                    <var>M</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.m | csv}}" tooltip-animation="false" ng-show="usedPhonemes.m.length > 0">Voiced Implosives</dd>
+
+
+                <dt ng-show="usedPhonemes.e.length > 0">
+                    <var>E</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.e | csv}}" tooltip-animation="false" ng-show="usedPhonemes.e.length > 0">Ejectives</dd>
+
+
+                <dt ng-show="usedPhonemes.d.length > 0">
+                    <var>D</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.d | csv}}" tooltip-animation="false" ng-show="usedPhonemes.d.length > 0">Other</dd>
+
+
+                <dt ng-show="usedPhonemes.s.length > 0">
+                    <var>S</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.s | csv}}" tooltip-animation="false" ng-show="usedPhonemes.s.length > 0">Close</dd>
+
+
+                <dt ng-show="usedPhonemes.g.length > 0">
+                    <var>G</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.g | csv}}" tooltip-animation="false" ng-show="usedPhonemes.g.length > 0">Close-Mid</dd>
+
+
+                <dt ng-show="usedPhonemes.h.length > 0">
+                    <var>H</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.h | csv}}" tooltip-animation="false" ng-show="usedPhonemes.h.length > 0">Open-Mid</dd>
+
+
+                <dt ng-show="usedPhonemes.o.length > 0">
+                    <var>O</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.o | csv}}" tooltip-animation="false" ng-show="usedPhonemes.o.length > 0">Open</dd>
+
+
+                <dt ng-show="usedPhonemes.j.length > 0">
+                    <var>J</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.j | csv}}" tooltip-animation="false" ng-show="usedPhonemes.j.length > 0">Front</dd>
+
+
+                <dt ng-show="usedPhonemes.q.length > 0">
+                    <var>Q</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.q | csv}}" tooltip-animation="false" ng-show="usedPhonemes.q.length > 0">Central</dd>
+
+
+                <dt ng-show="usedPhonemes.u.length > 0">
+                    <var>U</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.u | csv}}" tooltip-animation="false" ng-show="usedPhonemes.u.length > 0">Back</dd>
+
+
+                <dt ng-show="usedPhonemes.w.length > 0">
+                    <var>W</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.w | csv}}" tooltip-animation="false" ng-show="usedPhonemes.w.length > 0">Group 1</dd>
+
+
+                <dt ng-show="usedPhonemes.x.length > 0">
+                    <var>X</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.x | csv}}" tooltip-animation="false" ng-show="usedPhonemes.x.length > 0">Group 2</dd>
+
+
+                <dt ng-show="usedPhonemes.y.length > 0">
+                    <var>Y</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.y | csv}}" tooltip-animation="false" ng-show="usedPhonemes.y.length > 0">Group 3</dd>
+
+
+                <dt ng-show="usedPhonemes.z.length > 0">
+                    <var>Z</var>
+                </dt>
+                <dd class="has-tip" tooltip="{{usedPhonemes.z | csv}}" tooltip-animation="false" ng-show="usedPhonemes.z.length > 0">Group 4</dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+<form class="custom">
+<fieldset>
+    <legend>Core Structure</legend>
+    <div class="row">
+        <div class="medium-4 columns">
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <label for="structOnset" ng-class="{error: balanceError['onset']}">
+                        Onset
+                        <input class="structure" type="text" id="structOnset" ng-blur="testBalance($event, 'onset');" ng-model="syllable.onset.structure" />
+                        <small class="error_paren">Imbalanced parenthesis</small>
+                    </label>
+                </div>
+                <!-- <div class="small-4 columns">
+                    <span class="postfix">Req</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <label id="structureInput" for="structNucleus" ng-class="{error: balanceError['nucleus']}">
+                        Nucleus
+                        <input class="structure" type="text" id="structNucleus" ng-blur="testBalance($event, 'nucleus');" ng-model="syllable.nucleus.structure" required/>
+                        <small class="error_paren">Imbalanced parenthesis</small>
+                        <small class="error_require">This is required</small>
+                    </label>
+                </div>
+                <!-- <div class="small-4 columns">
+                    <span class="postfix">Req</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <label for="structCoda" ng-class="{error: balanceError['coda']}">
+                        Coda
+                        <input class="structure" type="text" id="structCoda" ng-blur="testBalance($event, 'coda');" ng-model="syllable.coda.structure" />
+                        <small class="error_paren">Imbalanced parenthesis</small>
+                    </label>
+                </div>
+                <!-- <div class="small-4 columns">
+                    <span class="postfix">Req</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <p>Syllable Structure: <span ng-hide="syllable.onset.structure == ''">({{syllable.onset.structure}})</span>{{syllable.nucleus.structure}}<span ng-hide="syllable.coda.structure == ''">({{syllable.coda.structure}})</span>
+            </p>
+        </div>
+    </div>
+</fieldset>
+<div class="row">
+    <div class="medium-7 columns">
+<fieldset>
+    <legend>Sonority Rules</legend>
+    <!-- <label for="followHierarchy">
+        <input type="checkbox" id="followHierarchy" ng-model="sonority.hierarchy" value="true"> Follow strict hierarchy rules
+    </label> -->
+    <ul>
+        <li  class="sonority_rule" ng-repeat="rule in sonority">
+            {{rule['first']}} {{rule['order']}} be followed by {{rule['last']}} <button class="text_only" ng-click="deleteSonorityRule($index)"><i class="fa fa-trash-o"></i></button>
+        </li>
+    </ul>
+    <div class="row collapse">
+        <div class="small-10 columns">
+            <label for="thisSonority" id="sonorityPanel">
+                <input type="text" placeholder="This phoneme" class="has-top"  tooltip-animation="false" tooltip="Enter a single phoneme" tooltip-trigger="focus" id="thisSonority" ng-model="sonorityTemp.first">
+            </label>
+        </div>
+        <div class="small-2 columns end">
+            <button class="postfix ipa" disabled>IPA</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <label for="thisOrder">
+                <select id="thisOrder" ng-model="sonorityTemp.order">
+                    <option value="must">MUST be followed by</option>
+                    <option value="must not">MUST NOT be followed by</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="small-10 columns">
+            <label for="thatSonority">
+                <input type="text" placeholder="that phoneme" tooltip-animation="false" tooltip="Enter a single phoneme" tooltip-trigger="focus" id="thatSonority" ng-model="sonorityTemp.last">
+            </label>
+        </div>
+        <div class="small-2 columns end">
+            <button class="postfix ipa" disabled>IPA</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-right">
+            <button ng-click="addSonorityRule()" ng-disabled="sonorityTemp.first == '' || sonorityTemp.last == '' || sonorityTemp.first == null || sonorityTemp.last == null || sonorityTemp.order == null"><i class="fa fa-plus"></i> Add Rule</button>
+        </div>
+    </div>
+</fieldset>
+</div>
+</div>
+<div class="row">
+    <div class="small-12 columns text-right">
+        <!-- <label for="randomize" class="inline_check">
+            <input type="checkbox" class="random" id="randomize" ng-model="randomized"><span>Shuffle Results</span>
+        </label> -->
+        <button id="generate" class="next" ng-click="generateStructure()" ng-disabled="balanceError['onset'] || balanceError['nucleus'] || balanceError['coda']">Generate</button>    
+    </div>
+</div>
+</form>

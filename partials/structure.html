@@ -1,0 +1,119 @@
+    <div class="row">
+        <div class="medium-5 columns">
+            <label for="">
+                Syllable Structure
+                <input id="structureInput" type="text" class="structure" ng-model="structure"/>
+            </label>
+            <button id="generate" class="next" ng-click="generateSyllables()">Generate</button>
+        </div>
+        <div class="medium-7 columns">
+            <div class="panel phoneme_list">
+                <span id="phonemePanel">Phoneme Groups</span>
+                <dl>
+                    <dt><var>C</var></dt>
+                        <dd>Consonants</dd>
+                        <dd>{{usedPhonemes.c | csv}}</dd>
+                    <dt><var>V</var></dt>
+                        <dd>Vowels</dd>
+                        <dd>{{usedPhonemes.v | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.p.length > 0"><var>P</var></dt>
+                        <dd ng-show="usedPhonemes.p.length > 0">Plosives</dd>
+                        <dd ng-show="usedPhonemes.p.length > 0">{{usedPhonemes.p | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.n.length > 0"><var>N</var></dt>
+                        <dd ng-show="usedPhonemes.n.length > 0">Nasals</dd>
+                        <dd ng-show="usedPhonemes.n.length > 0">{{usedPhonemes.n | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.r.length > 0"><var>R</var></dt>
+                        <dd ng-show="usedPhonemes.r.length > 0">Trills</dd>
+                        <dd ng-show="usedPhonemes.r.length > 0">{{usedPhonemes.r | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.t.length > 0">or Flaps <var>T</var></dt>
+                        <dd ng-show="usedPhonemes.t.length > 0">Tap or Flaps</dd>
+                        <dd ng-show="usedPhonemes.t.length > 0">{{usedPhonemes.t | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.f.length > 0"><var>F</var></dt>
+                        <dd ng-show="usedPhonemes.f.length > 0">Fricatives</dd>
+                        <dd ng-show="usedPhonemes.f.length > 0">{{usedPhonemes.f | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.l.length > 0"><var>L</var></dt>
+                        <dd ng-show="usedPhonemes.l.length > 0">Lateral Fricatives</dd>
+                        <dd ng-show="usedPhonemes.l.length > 0">{{usedPhonemes.l | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.a.length > 0"><var>A</var></dt>
+                        <dd ng-show="usedPhonemes.a.length > 0">Approximants</dd>
+                        <dd ng-show="usedPhonemes.a.length > 0">{{usedPhonemes.a | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.b.length > 0"><var>B</var></dt>
+                        <dd ng-show="usedPhonemes.b.length > 0">Lateral Approximants</dd>
+                        <dd ng-show="usedPhonemes.b.length > 0">{{usedPhonemes.b | csv}}</dd>
+
+                    <dt ng-show="usedPhonemes.i.length > 0"><var>I</var></dt>
+                        <dd ng-show="usedPhonemes.i.length > 0">Affricates</dd>
+                        <dd ng-show="usedPhonemes.i.length > 0">{{usedPhonemes.i | csv}}</dd>
+
+                    
+                    <dt ng-show="usedPhonemes.k.length > 0"><var>K</var></dt>
+                        <dd ng-show="usedPhonemes.k.length > 0">Clicks</dd>
+                        <dd ng-show="usedPhonemes.k.length > 0">{{usedPhonemes.k | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.m.length > 0"><var>M</var></dt>
+                        <dd ng-show="usedPhonemes.m.length > 0">Voiced Implosives</dd>
+                        <dd ng-show="usedPhonemes.m.length > 0">{{usedPhonemes.m | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.e.length > 0"><var>E</var></dt>
+                        <dd ng-show="usedPhonemes.e.length > 0">Ejectives</dd>
+                        <dd ng-show="usedPhonemes.e.length > 0">{{usedPhonemes.e | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.d.length > 0"><var>D</var></dt>
+                        <dd ng-show="usedPhonemes.d.length > 0">Other</dd>
+                        <dd ng-show="usedPhonemes.d.length > 0">{{usedPhonemes.d | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.s.length > 0"><var>S</var></dt>
+                        <dd ng-show="usedPhonemes.s.length > 0">Close</dd>
+                        <dd ng-show="usedPhonemes.s.length > 0">{{usedPhonemes.s | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.g.length > 0"><var>G</var></dt>
+                        <dd ng-show="usedPhonemes.g.length > 0">Close-Mid</dd>
+                        <dd ng-show="usedPhonemes.g.length > 0">{{usedPhonemes.g | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.h.length > 0"><var>H</var></dt>
+                        <dd ng-show="usedPhonemes.h.length > 0">Open-Mid</dd>
+                        <dd ng-show="usedPhonemes.h.length > 0">{{usedPhonemes.h | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.o.length > 0"><var>O</var></dt>
+                        <dd ng-show="usedPhonemes.o.length > 0">Open</dd>
+                        <dd ng-show="usedPhonemes.o.length > 0">{{usedPhonemes.o | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.j.length > 0"><var>J</var></dt>
+                        <dd ng-show="usedPhonemes.j.length > 0">Front</dd>
+                        <dd ng-show="usedPhonemes.j.length > 0">{{usedPhonemes.j | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.q.length > 0"><var>Q</var></dt>
+                        <dd ng-show="usedPhonemes.q.length > 0">Central</dd>
+                        <dd ng-show="usedPhonemes.q.length > 0">{{usedPhonemes.q | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.u.length > 0"><var>U</var></dt>
+                        <dd ng-show="usedPhonemes.u.length > 0">Back</dd>
+                        <dd ng-show="usedPhonemes.u.length > 0">{{usedPhonemes.u | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.w.length > 0"><var>W</var></dt>
+                        <dd ng-show="usedPhonemes.w.length > 0">Group 1</dd>
+                        <dd ng-show="usedPhonemes.w.length > 0">{{usedPhonemes.w | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.x.length > 0"><var>X</var></dt>
+                        <dd ng-show="usedPhonemes.x.length > 0">Group 2</dd>
+                        <dd ng-show="usedPhonemes.x.length > 0">{{usedPhonemes.x | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.y.length > 0"><var>Y</var></dt>
+                        <dd ng-show="usedPhonemes.y.length > 0">Group 3</dd>
+                        <dd ng-show="usedPhonemes.y.length > 0">{{usedPhonemes.y | csv}}</dd>
+                    
+                    <dt ng-show="usedPhonemes.z.length > 0"><var>Z</var></dt>
+                        <dd ng-show="usedPhonemes.z.length > 0">Group 4</dd>
+                        <dd ng-show="usedPhonemes.z.length > 0">{{usedPhonemes.z | csv}}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>

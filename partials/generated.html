@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="small-12 columns">
+        <p>Consonants Generated: {{numberSyllables}}</p>
+    </div>
+    
+</div>
+<div class="row">
+    <div class="small-6 medium-3 columns">
+        <label>Filter
+            <input type="text" ng-model="filterText" />
+        </label>
+    </div>
+    <div class="small-6 medium-3 columns end">
+        <label for="randomize" class="inline_check inline_fields">
+            <input type="checkbox" class="random" id="randomize" ng-model="randomized"><span>Shuffle Results</span>
+        </label>
+    </div>
+</div>
+<div class="row" ng-hide="randomized">
+    <div class="small-12 columns">
+        <ul class="generated_list small-block-grid-2 medium-block-grid-4">
+            <li dir-paginate="item in syllable.allSyllables | itemsPerPage:pageSize| orderBy: item |filter:filterText">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row" ng-show="randomized">
+    <div class="small-12 columns">
+        <ul class="generated_list small-block-grid-2 medium-block-grid-4">
+            <li dir-paginate="item in syllable.shuffled | itemsPerPage:pageSize| orderBy: item |filter:filterText">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row" ng-show="numberSyllables > 28">
+    <div class="small-12 medium-8 columns">
+        <dir-pagination-controls></dir-pagination-controls>        
+    </div>
+    <div class="small-12 medium-4 columns">
+        <label for="">Items per page
+            <select name="pageNums" ng-model="pageSize">
+                <option value="28">28</option>
+                <option value="56">56</option>
+                <option value="84">84</option>
+                <option value="112">112</option>
+                <option value="224">224</option>
+            </select>
+        </label>
+    </div>
+</div>
+
+

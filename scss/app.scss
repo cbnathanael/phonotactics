@@ -1,0 +1,318 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic');
+//Variables
+$red:#FF5555;
+ $green:#3BB281;
+ $blue:#4CB0D5;
+ $cream:#F2A266;
+ $purple:#5F7CEA;
+@import "settings";
+@import "foundation";
+@font-face {
+    font-family: DoulosSILW;
+    src: url(../fonts/DoulosSIL-R.woff);
+}
+input[type=text] {
+    box-shadow: none;
+    &:focus, &:active {
+        border-color: $primary-color;
+        box-shadow: none;
+        background-color: white;
+    }
+}
+input[type=text] {
+    font-family: 'DoulosSILW';
+    &.structure {
+        font-family: $body-font-family;
+    }
+}
+input[type=checkbox] {
+        display: none;
+        &:checked + span:before {
+            content: '\f14a';
+            color: $success-color;
+        }
+    
+    & + span {
+        position: relative;
+        &:before {
+            font-family: 'FontAwesome';
+            content: '\f096';
+            font-size: 1.5em;
+            margin-right: 0.25em;
+            position: relative;
+            top: 0.15em;
+            color: #444;
+            display: inline-block;
+            min-width: 1.125em;
+        }
+    }
+}
+label {
+    small {
+        display: none;
+    }
+    &.error {
+        input {
+            border-color: $alert-color;
+        }
+        small {
+            display: inline-block;
+            color: $alert-color;
+        }
+    }
+    &.inline_check {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &.inline_fields {
+        padding-top: 1.4rem;
+    }
+}
+var {
+    font-weight: bold;
+    font-style: normal;
+    color: $body-font-color;
+    border: 1px solid $primary-color;
+    border-radius: 0.3em;
+    padding: 0.1em 0.2em;
+    background: lighten($primary-color, 60);
+}
+button, .button {
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid $primary-color;
+    transition: all 0.3s;
+    background: $primary-color;
+    &:focus, &:active {
+        outline: none;
+        background: $primary-color;
+    }
+    &:hover {
+        background: $primary-color;
+        border-bottom-color: darken($primary-color, 15);
+    }
+    &:before {
+        font-family: 'FontAwesome';
+        margin-right: 0.5rem;
+    }
+    &.next {
+        background-color: $success-color;
+        border-bottom-color: $success-color;
+        &:hover {
+            border-bottom-color: darken($success-color, 10);
+        }
+        &:before {
+            content: '\f00c';
+        }
+    }
+    &.active {
+        border-bottom-color: $cream;
+    }
+    &.running {
+        background-color: $success-color;
+        border-bottom-color: darken($success-color, 10);
+        //color: rgba(white, 0.9);
+        opacity: 0.7;
+        &:before {
+            content: '\f1ce';
+            display: inline-block;
+            height: 16px;
+            -webkit-animation: spin 2s infinite linear;
+            -moz-animation: spin 2s infinite linear;
+            -o-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear;
+        }
+    }
+    &.text_only {
+        padding: 0;
+        margin: 0;
+        color: $primary-color;
+        background: none;
+        border: none;
+        &:hover {
+            color: darken($primary-color, 10);
+        }
+    }
+}
+span.postfix { margin-top: 1.5em; }
+label.prefix {
+    text-align: left;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // border-width: 1px 1px 0 1px !important;
+    // @media #{$medium}{
+        border-width: 1px 0 1px 1px;
+    //}
+}
+// input + span.tooltip {
+//     min-width: 100%;
+//     top: 2.6em !important;
+//     border-style: solid;
+//     border-color: #ccc;
+//     border-width: 0 1px 1px;
+//     background: #efefef;
+//     color: $body-font-color;
+//     .nub { display: none; }
+// }
+button.postfix {
+    padding: 0;
+}
+header {
+    background: $primary-color;
+    box-shadow: 0 -1.1rem 0.6rem 1rem black;
+    margin-bottom: 2rem;
+    button {
+        margin: 0;
+        
+        &:disabled {
+            border-bottom-color: $primary-color;
+        }
+    }
+    h1 { color: white; }
+    // button {
+    //     background: #eee;
+    //     color: #777;
+    //     border-bottom-color: #EEE;
+    //     &:hover, &:focus {
+    //         background: #eee;
+    //         border-bottom-color: #CCC;
+    //         color: #777;
+    //     }
+    //     &.active:focus {
+    //         border-bottom-color: $cream;
+    //     }
+    //     &[disabled] {
+    //         background: #EEE;
+    //         border-bottom-color: #eee;
+    //         color: #BBB;
+    //     }
+    // }
+}
+footer {
+    margin: 2em 0 1em 0;
+}
+.accordion dd {
+    border: 1px solid #ccc;
+    & + dd {
+        border-top: none;
+    }
+}
+.accordion .accordion-navigation>a, .accordion dd>a {
+    padding: 0.5rem 1rem;
+    background: #FaFaFa;
+    i.fa {
+        margin-top: 0.25rem;
+    }
+}
+.phoneme_list {
+    font-size: 0.875rem;
+    dl {
+        font-size: inherit;
+    }
+    dt {
+        display: inline;
+        & + dd {
+            display: inline;
+        }
+    }
+    dd + dd {
+        font-family: 'DoulosSILW';
+    }
+}
+.generated_list {
+    font-family: 'DoulosSILW';
+}
+#working {
+    // width: 10em;
+    // margin-left: -5em;
+    text-align: center;
+    .fa {
+        font-size: 3em;
+        height: 48px;
+    }
+}
+
+//22-wide
+
+table.ipa {
+	width: 100%;
+    border-collapse: collapse;
+    tr { background: white; }
+    td, th {
+    	border: 1px solid lighten($primary-color, 20);
+		padding: 0 0.625rem;
+    }
+    td {
+    	background: lighten($primary-color, 38);
+    	font-size: 1rem;
+    	padding: 0;
+    	width: 2.2rem;
+    	height: 2.2rem;
+        label {
+        	input[type=checkbox] {
+				display: none;
+
+				&:checked + span {
+					background: darken($success-color, 10);
+					border-bottom-color: darken($success-color, 10);
+                    &:before { display: none; }
+				}
+        	}
+        	span {
+	        	font-family: 'DoulosSILW';
+	            display: block;
+	            width: 100%;
+	            height: 100%;
+	            margin: 0;
+	            padding: 0;
+	            min-width: 2rem;
+	            min-height: 2rem;
+	            background: $primary-color;
+	            border-bottom: 3px solid $primary-color;
+	            color: white;
+	            text-align: center;
+	            line-height: 2rem;
+                font-size: 1.2rem;
+                &:before { display: none; }
+	        }
+	        &:hover {
+	        	span {
+	        		border-bottom: 3px solid darken($primary-color, 10);
+	        	}
+	        	input[type=checkbox] {
+					&:checked + span {
+						border-bottom-color: darken($success-color, 15);
+					}
+        		}
+	        }
+        }
+        &.impossible {
+        	background: lighten($cream, 28);
+        }
+    }
+    &.npc {
+    	label {
+    		span {
+	    		display: inline-block;
+	    		margin-right: 0.625rem;
+	    		width: auto;
+	    		height: auto;
+	    	}
+    	}
+    	th {
+    		padding: 0.5rem 0.626rem;
+    	}
+    	td {
+    		padding-right: 0.626rem;
+    	}
+    }
+}
+.sonority_rule.ng-enter, .sonority_rule.ng-move {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:0;
+}

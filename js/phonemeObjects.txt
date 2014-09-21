@@ -1,0 +1,360 @@
+'1': {
+	phone: 'p',
+	selected: false
+	}
+'2': {
+	phone: 'b',
+	selected: false
+	}
+'3': {
+	phone: 't',
+	selected: false
+	}
+'4': {
+	phone: 'd',
+	selected: false
+	}
+'5': {
+	phone: 'ʈ',
+	selected: false
+	}
+'6': {
+	phone: 'ɖ',
+	selected: false
+	}
+'7': {
+	phone: 'c',
+	selected: false
+	}
+'8': {
+	phone: 'ɟ',
+	selected: false
+	}
+'9': {
+	phone: 'k',
+	selected: false
+	}
+'10': {
+	phone: 'g',
+	selected: false
+	}
+'11': {
+	phone: 'q',
+	selected: false
+	}
+'12': {
+	phone: 'ɢ',
+	selected: false
+	}
+'13': {
+	phone: 'ʔ',
+	selected: false
+	}
+'14': {
+	phone: 'm',
+	selected: false
+	}
+'15': {
+	phone: 'ɱ',
+	selected: false
+	}
+'16': {
+	phone: 'n',
+	selected: false
+	}
+'17': {
+	phone: 'ɳ',
+	selected: false
+	}
+'18': {
+	phone: 'ɲ',
+	selected: false
+	}
+'19': {
+	phone: 'ŋ',
+	selected: false
+	}
+'20': {
+	phone: 'ɴ',
+	selected: false
+	}
+'21': {
+	phone: 'ʙ',
+	selected: false
+	}
+'22': {
+	phone: 'r',
+	selected: false
+	}
+'23': {
+	phone: 'ʀ',
+	selected: false
+	}
+'24': {
+	phone: 'ɾ',
+	selected: false
+	}
+'25': {
+	phone: 'ɽ',
+	selected: false
+	}
+'26': {
+	phone: 'ɸ',
+	selected: false
+	}
+'27': {
+	phone: 'β',
+	selected: false
+	}
+'28': {
+	phone: 'f',
+	selected: false
+	}
+'29': {
+	phone: 'v',
+	selected: false
+	}
+'30': {
+	phone: 'θ',
+	selected: false
+	}
+'31': {
+	phone: 'ð',
+	selected: false
+	}
+'32': {
+	phone: 's',
+	selected: false
+	}
+'33': {
+	phone: 'z',
+	selected: false
+	}
+'34': {
+	phone: 'ʃ',
+	selected: false
+	}
+'35': {
+	phone: 'ʒ',
+	selected: false
+	}
+'36': {
+	phone: 'ʂ',
+	selected: false
+	}
+'37': {
+	phone: 'ʐ',
+	selected: false
+	}
+'38': {
+	phone: 'ç',
+	selected: false
+	}
+'39': {
+	phone: 'ʝ',
+	selected: false
+	}
+'40': {
+	phone: 'x',
+	selected: false
+	}
+'41': {
+	phone: 'ɣ',
+	selected: false
+	}
+'42': {
+	phone: 'χ',
+	selected: false
+	}
+'43': {
+	phone: 'ʁ',
+	selected: false
+	}
+'44': {
+	phone: 'ħ',
+	selected: false
+	}
+'45': {
+	phone: 'ʕ',
+	selected: false
+	}
+'46': {
+	phone: 'h',
+	selected: false
+	}
+'47': {
+	phone: 'ɦ',
+	selected: false
+	}
+'48': {
+	phone: 'ɬ',
+	selected: false
+	}
+'49': {
+	phone: 'ɮ',
+	selected: false
+	}
+'50': {
+	phone: 'ʋ',
+	selected: false
+	}
+'51': {
+	phone: 'ɹ',
+	selected: false
+	}
+'52': {
+	phone: 'ɻ',
+	selected: false
+	}
+'53': {
+	phone: 'j',
+	selected: false
+	}
+'54': {
+	phone: 'ɰ',
+	selected: false
+	}
+'55': {
+	phone: 'l',
+	selected: false
+	}
+'56': {
+	phone: 'ɭ',
+	selected: false
+	}
+'57': {
+	phone: 'ʎ',
+	selected: false
+	}
+'58': {
+	phone: 'ʟ',
+	selected: false
+	}
+'59': {
+	phone: 'ʘ',
+	selected: false
+	}
+'60': {
+	phone: 'ɓ',
+	selected: false
+	}
+'61': {
+	phone: 'pʼ',
+	selected: false
+	}
+'62': {
+	phone: 'ǀ',
+	selected: false
+	}
+'63': {
+	phone: 'ɗ',
+	selected: false
+	}
+'64': {
+	phone: 'tʼ',
+	selected: false
+	}
+'65': {
+	phone: 'ǃ',
+	selected: false
+	}
+'66': {
+	phone: 'ʄ',
+	selected: false
+	}
+'67': {
+	phone: 'kʼ',
+	selected: false
+	}
+'68': {
+	phone: 'ǂ',
+	selected: false
+	}
+'69': {
+	phone: 'ɠ',
+	selected: false
+	}
+'70': {
+	phone: 'sʼ',
+	selected: false
+	}
+'71': {
+	phone: 'ǁ',
+	selected: false
+	}
+'72': {
+	phone: 'ʛ',
+	selected: false
+	}
+'73': {
+	phone: 'ʍ',
+	selected: false
+	}
+'74': {
+	phone: 'w',
+	selected: false
+	}
+'75': {
+	phone: 'ɥ',
+	selected: false
+	}
+'76': {
+	phone: 'ʜ',
+	selected: false
+	}
+'77': {
+	phone: 'ʢ',
+	selected: false
+	}
+'78': {
+	phone: 'ʡ',
+	selected: false
+	}
+'79': {
+	phone: 'ɕ',
+	selected: false
+	}
+'80': {
+	phone: 'ʑ',
+	selected: false
+	}
+'81': {
+	phone: 'ɺ',
+	selected: false
+	}
+'82': {
+	phone: 'ɧ',
+	selected: false
+	}
+'83': {
+	phone: 't͡s',
+	selected: false
+	}
+'84': {
+	phone: 't͡ʃ',
+	selected: false
+	}
+'85': {
+	phone: 't͡ɕ',
+	selected: false
+	}
+'86': {
+	phone: 'ʈ͡ʂ',
+	selected: false
+	}
+'87': {
+	phone: 'd͡z',
+	selected: false
+	}
+'88': {
+	phone: 'd͡ʒ',
+	selected: false
+	}
+'89': {
+	phone: 'd͡ʑ',
+	selected: false
+	}
+'90': {
+	phone: 'ɖ͡ʐ',
+	selected: false
+	}

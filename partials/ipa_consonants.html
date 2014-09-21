@@ -1,0 +1,1056 @@
+<form action="" id="ipaConsonants" ng-submit="addIPA($event)">
+    <div class="list">
+        <div class="row">
+            <div class="small-12 columns text-right">
+                <button class="close" ng-click="closeIPA()"><i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 medium-2 columns">
+                <label class="prefix" for="consonant" id="phonemeList">
+                    <var>{{ipaItem.item}}</var>{{ipaItem.title}}</label>
+            </div>
+            <div class="small-11 medium-9 columns">
+                <input type="text" disabled ng-list ng-model="phonemeList" />
+            </div>
+            <div class="small-1 columns">
+                <button class="postfix" type="submit">Add</button>
+            </div>
+        </div>
+    </div>
+    <tabset>
+    <tab heading="Vowels">
+        <div class="row">
+            <div class="medium-8 columns medium-centered">
+                <table class="ipa">
+                    <tr>
+                        <th colspan="2"></th>
+                        <th colspan="5" class="text-center">Front</th>
+                        <th colspan="5"  class="text-center">Central</th>
+                        <th colspan="5" class="text-center">Back</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Close</th>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['91'].selected" value="i" />
+                                <span>i</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['92'].selected" value="y" />
+                                <span>y</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['93'].selected" value="{{checkbox['93'].phone}}" />
+                                <span>{{checkbox['93'].phone}}</span>
+                            </label>
+
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['94'].selected" value="{{checkbox['94'].phone}}" />
+                                <span>{{checkbox['94'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['95'].selected" value="{{checkbox['95'].phone}}" />
+                                <span>{{checkbox['95'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['96'].selected" value="{{checkbox['96'].phone}}" />
+                                <span>{{checkbox['96'].phone}}</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['97'].selected" value="{{checkbox['97'].phone}}" />
+                                <span>{{checkbox['97'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['98'].selected" value="{{checkbox['98'].phone}}" />
+                                <span>{{checkbox['98'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['99'].selected" value="{{checkbox['99'].phone}}" />
+                                <span>{{checkbox['99'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Close-mid</th>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['100'].selected" value="{{checkbox['100'].phone}}" />
+                                <span>{{checkbox['100'].phone}}</span>
+                            </label>
+                        </td>
+                        <td><label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['101'].selected" value="{{checkbox['101'].phone}}" />
+                                <span>{{checkbox['101'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['102'].selected" value="{{checkbox['102'].phone}}" />
+                                <span>{{checkbox['102'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['103'].selected" value="{{checkbox['103'].phone}}" />
+                                <span>{{checkbox['103'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['104'].selected" value="{{checkbox['104'].phone}}" />
+                                <span>{{checkbox['104'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['105'].selected" value="{{checkbox['105'].phone}}" />
+                                <span>{{checkbox['105'].phone}}</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['106'].selected" value="{{checkbox['106'].phone}}" />
+                                <span>{{checkbox['106'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Open-mid</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['107'].selected" value="{{checkbox['107'].phone}}" />
+                                <span>{{checkbox['107'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['108'].selected" value="{{checkbox['108'].phone}}" />
+                                <span>{{checkbox['108'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['109'].selected" value="{{checkbox['109'].phone}}" />
+                                <span>{{checkbox['109'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['110'].selected" value="{{checkbox['110'].phone}}" />
+                                <span>{{checkbox['110'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['111'].selected" value="{{checkbox['111'].phone}}" />
+                                <span>{{checkbox['111'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['112'].selected" value="{{checkbox['112'].phone}}" />
+                                <span>{{checkbox['112'].phone}}</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['113'].selected" value="{{checkbox['113'].phone}}" />
+                                <span>{{checkbox['113'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['114'].selected" value="{{checkbox['114'].phone}}" />
+                                <span>{{checkbox['114'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <th colspan="2">Open</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['115'].selected" value="{{checkbox['115'].phone}}" />
+                                <span>{{checkbox['115'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['116'].selected" value="{{checkbox['116'].phone}}" />
+                                <span>{{checkbox['116'].phone}}</span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['117'].selected" value="{{checkbox['117'].phone}}" />
+                                <span>{{checkbox['117'].phone}}</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="phoneme">
+                                <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['118'].selected" value="{{checkbox['118'].phone}}" />
+                                <span>{{checkbox['118'].phone}}</span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </tab>
+    <tab heading="Consonants">
+        <div class="row">
+            <div class="small-12 columns">
+                <table class="ipa">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th colspan="2">Bi-labial</th>
+                            <th colspan="2">Labio-dental</th>
+                            <th colspan="2">Den
+                                <wbr>tal</th>
+                            <th colspan="2">Alve
+                                <wbr>olar</th>
+                            <th colspan="2">Post alveolar</th>
+                            <th colspan="2">Retro
+                                <wbr>flex</th>
+                            <th colspan="2">Pala
+                                <wbr>tal</th>
+                            <th colspan="2">Ve
+                                <wbr>lar</th>
+                            <th colspan="2">Uvu
+                                <wbr>lar</th>
+                            <th colspan="2">Phary
+                                <wbr>ngeal</th>
+                            <th colspan="2">Glot
+                                <wbr>tal</th>
+                        </tr>
+                        <tr>
+                            <th>Plosive</th>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['1'].selected" value="p" />
+                                    <span>p</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['2'].selected" value="b" />
+                                    <span>b</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['3'].selected" value="t" />
+                                    <span>t</span>
+                                </label>
+                            </td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['4'].selected" value="d" />
+                                    <span>d</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['5'].selected" value="ʈ" />
+                                    <span>ʈ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['6'].selected" value="ɖ" />
+                                    <span>ɖ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['7'].selected" value="c" />
+                                    <span>c</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['8'].selected" value="ɟ" />
+                                    <span>ɟ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['9'].selected" value="k" />
+                                    <span>k</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['10'].selected" value="g" />
+                                    <span>g</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['11'].selected" value="q" />
+                                    <span>q</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['12'].selected" value="ɢ" />
+                                    <span>ɢ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['13'].selected" value="ʔ" />
+                                    <span>ʔ</span>
+                                </label>
+                            </td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Nasal</th>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['14'].selected" value="m" />
+                                    <span>m</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['15'].selected" value="ɱ" />
+                                    <span>ɱ</span>
+                                </label>
+                            </td>
+                            <td colspan="3" class="extended"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['16'].selected" value="n" />
+                                    <span>n</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['17'].selected" value="ɳ" />
+                                    <span>ɳ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['18'].selected" value="ɲ" />
+                                    <span>ɲ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['19'].selected" value="ŋ" />
+                                    <span>ŋ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['20'].selected" value="ɴ" />
+                                    <span>ɴ</span>
+                                </label>
+                            </td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Trill</th>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['21'].selected" value="ʙ" />
+                                    <span>ʙ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3" class="extended"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['22'].selected" value="r" />
+                                    <span>r</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['23'].selected" value="ʀ" />
+                                    <span>ʀ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Tap or Flap</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3" class="extended"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['24'].selected" value="ɾ" />
+                                    <span>ɾ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['25'].selected" value="ɽ" />
+                                    <span>ɽ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Fricative</th>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['26'].selected" value="ɸ" />
+                                    <span>ɸ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['27'].selected" value="β" />
+                                    <span>β</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['28'].selected" value="f" />
+                                    <span>f</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['29'].selected" value="v" />
+                                    <span>v</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['30'].selected" value="θ" />
+                                    <span>θ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['31'].selected" value="ð" />
+                                    <span>ð</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['32'].selected" value="s" />
+                                    <span>s</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['33'].selected" value="z" />
+                                    <span>z</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['34'].selected" value="ʃ" />
+                                    <span>ʃ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['35'].selected" value="ʒ" />
+                                    <span>ʒ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['36'].selected" value="ʂ" />
+                                    <span>ʂ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['37'].selected" value="ʐ" />
+                                    <span>ʐ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['38'].selected" value="ç" />
+                                    <span>ç</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['39'].selected" value="ʝ" />
+                                    <span>ʝ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['40'].selected" value="x" />
+                                    <span>x</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['41'].selected" value="ɣ" />
+                                    <span>ɣ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['42'].selected" value="χ" />
+                                    <span>χ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['43'].selected" value="ʁ" />
+                                    <span>ʁ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['44'].selected" value="ħ" />
+                                    <span>ħ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['45'].selected" value="ʕ" />
+                                    <span>ʕ</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['46'].selected" value="h" />
+                                    <span>h</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['47'].selected" value="ɦ" />
+                                    <span>ɦ</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Lateral Fricative</th>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['48'].selected" value="ɬ" />
+                                    <span>ɬ</span>
+                                </label>
+                            </td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['49'].selected" value="ɮ" />
+                                    <span>ɮ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Approximant</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['50'].selected" value="ʋ" />
+                                    <span>ʋ</span>
+                                </label>
+                            </td>
+                            <td colspan="3" class="extended"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['51'].selected" value="ɹ" />
+                                    <span>ɹ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['52'].selected" value="ɻ" />
+                                    <span>ɻ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['53'].selected" value="j" />
+                                    <span>j</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['54'].selected" value="ɰ" />
+                                    <span>ɰ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                        <tr>
+                            <th>Lateral Approximant</th>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td colspan="3" class="extended"></td>
+                            <td colspan="3">
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['55'].selected" value="l" />
+                                    <span>l</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['56'].selected" value="ɭ" />
+                                    <span>ɭ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['57'].selected" value="ʎ" />
+                                    <span>ʎ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['58'].selected" value="ʟ" />
+                                    <span>ʟ</span>
+                                </label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                            <td class="impossible"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 medium-7 medium-centered columns">
+                <table class="ipa npc">
+                    <thead>
+                        <tr>
+                            <th>Clicks</th>
+                            <th>Voiced implosives</th>
+                            <th>Ejectives</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['59'].selected" value="ʘ" />
+                                    <span>ʘ</span>Bilabial
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['60'].selected" value="ɓ" />
+                                    <span>ɓ</span>Bilabial
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['61'].selected" value="pʼ" />
+                                    <span>pʼ</span>Bilabial
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['62'].selected" value="ǀ" />
+                                    <span>ǀ</span>Dental
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['63'].selected" value="ɗ" />
+                                    <span>ɗ</span>Dental/alveolar
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['64'].selected" value="tʼ" />
+                                    <span>tʼ</span>Dental/alveolar
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['65'].selected" value="ǃ" />
+                                    <span>ǃ</span>(Post)alveoalar
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['66'].selected" value="ʄ" />
+                                    <span>ʄ</span>Palatal
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['67'].selected" value="kʼ" />
+                                    <span>kʼ</span>Velar
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['68'].selected" value="ǂ" />
+                                    <span>ǂ</span>Palatoalveolar
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['69'].selected" value="ɠ" />
+                                    <span>ɠ</span>Velar
+                                </label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['70'].selected" value="sʼ" />
+                                    <span>sʼ</span>Alveolar fricative
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['71'].selected" value="ǁ" />
+                                    <span>ǁ</span>Alveolar lateral</label>
+                            </td>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['72'].selected" value="ʛ" />
+                                    <span>ʛ</span>Uvular</label>
+                            </td>
+                            <td class="blank">
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-4 medium-push-2 columns">
+                other symbols
+                <table class="ipa npc">
+                    <!-- rt = rows table -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['73'].selected" value="ʍ">
+                                    <span>ʍ</span>Voiceless labial-velar fricative</label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['74'].selected" value="w">
+                                    <span>w</span>Voiced labial-velar approximant</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['75'].selected" value="ɥ">
+                                    <span>ɥ</span>Voiced labial-palatal approximant</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['76'].selected" value="ʜ">
+                                    <span>ʜ</span>Voiceless epiglottal fricative</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['77'].selected" value="ʢ">
+                                    <span>ʢ</span>Voiced epiglottal fricative</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['78'].selected" value="ʡ">
+                                    <span>ʡ</span>Epiglottal plosive</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['79'].selected" value="ɕ">
+                                    <span>ɕ</span>Voiceless alveolo-palatal fricative</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['80'].selected" value="ʑ">
+                                    <span>ʑ</span>Voiced alveolo-palatal fricative</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['81'].selected" value="ɺ">
+                                    <span>ɺ</span>Alveolar lateral flap</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['82'].selected" value="ɧ">
+                                    <span>ɧ</span>Simultaneous ʃ and x
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="medium-4 medium-push-2 columns end">
+                affricates
+                <table class="ipa npc">
+                    <!-- rt = rows table -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['83'].selected" value="t͡s">
+                                    <span>t͡s</span>Voiceless alveolar affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['84'].selected" value="t͡ʃ">
+                                    <span>t͡ʃ</span>Voiceless palato-alveolar affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['85'].selected" value="t͡ɕ">
+                                    <span>t͡ɕ</span>Voiceless alveolo-palatal affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['86'].selected" value="ʈ͡ʂ">
+                                    <span>ʈ͡ʂ</span>Voiceless retroflex affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['87'].selected" value="d͡z">
+                                    <span>d͡z</span>Voiced alveolar affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['88'].selected" value="d͡ʒ">
+                                    <span>d͡ʒ</span>Voiced post-alveolar affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['89'].selected" value="d͡ʑ">
+                                    <span>d͡ʑ</span>Voiced alveolo-palatal affricate</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="phoneme">
+                                    <input ng-change="ipaChecked()" type="checkbox" class="phoneme" ng-model="checkbox['90'].selected" value="ɖ͡ʐ">
+                                    <span>ɖ͡ʐ</span>Voiceless retroflex affricate</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </tab>
+</form>
